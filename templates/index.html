@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html>
+            <style>
+        input[type=text], select {
+        width: 65%;
+        /* height: 40px; */
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+          
+
+        /* align: center; */
+        }
+
+        input[type=submit] {
+        width: 30%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 75%;
+        align: center;     
+		padding-bottom : 20px;
+        }
+
+        H1 {color: #EC7063; font-size: 55px}
+        H4,H3 {color: #EC7063; font-size: 20px}
+		H2 {color: black; font-size: 25px}
+
+        </style>
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+
+
+        <title>PREDICT - EXTRA MARITAL AFFAIR</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+
+    <body>
+
+        <h1 align="center">PREDICT - EXTRA MARITAL AFFAIR</h1>
+        <h3 align="center">MACHINE LEARNING - LOGISTIC REGRESSION MODEL</h3><br>
+
+        <style>
+
+            body{
+            <!--    background-image: url('https://www.wallpaperkiss.com/wimg/b/145-1451806_big.jpg'); -->    
+				background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+                }
+        </style>
+
+	<div align="center" style = "position:absolute; left:10%; ">
+	  <form action="{{ url_for('predict')}}"  method="post">
+
+                <label for="Rate_Marriage" >RATE MARRIAGE </label><br>
+                <input type="text" id="Rate_Marriage" name="Rate_Marriage" placeholder="RATE MARRIAGE BETWEEN 1 TO 5" required="required"><br>
+            
+            <br>
+                <label for="Years_Married">YEARS MARRIED</label><br>
+                <input type="text" id="Years_Married" name="Years_Married" placeholder="NO. OF YEARS SINCE MARRIAGE" required="required"><br>
+            
+            <br>
+                <label for="Children">CHILDREN </label><br>
+                <input type="text" id="Children" name="Children" placeholder="NO. OF CHILDREN" required="required"><br>
+			
+			  <br>
+                <label for="Women_Age">WIFE`S AGE</label><br>
+                <input type="text" id="Women_Age" name="Women_Age" placeholder="ENTER WOMEN`S AGE" required="required"><br>
+			
+			<br>
+				<label for="Religious">WIFE`S RELIGIOUS NATURE</label><br>
+					<select id="Religious" name="Religious">
+					<option value="1">NOT RELIGIOUS</option>
+					<option value="2">LITTLE RELIGIOUS</option>
+					<option value="3">MODERATELY RELIGIOUS</option>
+					<option value="4">STRONGLY RELIGIOUS</option>
+					<option value="5">VERY STRONGLY RELIGIOUS</option>
+					</select>
+
+            <br><br>
+				<label for="Education">WIFE`S EDUCATIONAL QUALIFICATION</label><br>
+					<select id="Education" name="Education">
+					<option value="9">GRADE SCHOOL</option>
+					<option value="12">HIGH SCHOOL</option>
+					<option value="14">SOME COLLEGE</option>
+					<option value="16">COLLEGE GRADUATE</option>
+					<option value="17">SOME GRADUATE SCHOOL</option>
+					<option value="20">ADVANCE DEGREE</option>
+					</select>
+
+            <br><br>
+
+				<label for="W_Occ">WIFE`S OCCUPATION</label><br>
+					<select id="W_Occ" name="W_Occ">
+					<option value="1">STUDENT</option>
+					<option value="2">FARMING / SEMI-SKILLED / UNSKILLED</option>
+					<option value="3">WHITE COLLAR</option>
+					<option value="4">TEACHER / NURSE / WRITER / TECHNICIAN / SKILLED</option>
+					<option value="5">MANAGERIAL / BUSINESS</option>
+					<option value="6">PROFESSIONAL WITH ADVANCE DEGREE</option>
+					</select>
+
+			<br><br>
+				<label for="H_Occ">HUSBAND`S OCCUPATION</label><br>
+					<select id="H_Occ" name="H_Occ">
+					<option value="1">STUDENT</option>
+					<option value="2">FARMING / SEMI-SKILLED / UNSKILLED</option>
+					<option value="3">WHITE COLLAR</option>
+					<option value="4">TEACHER / NURSE / WRITER / TECHNICIAN / SKILLED</option>
+					<option value="5">MANAGERIAL / BUSINESS</option>
+					<option value="6">PROFESSIONAL WITH ADVANCE DEGREE</option>
+					</select>
+			<br><br>  
+    <input type="submit" value="Submit">
+  </form>
+  
+
+  
+  
+</div>
+
+
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>

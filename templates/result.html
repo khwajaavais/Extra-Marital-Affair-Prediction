@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+            <style>
+        input[type=text], select {
+        width: 65%;
+        /* height: 40px; */
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+          background-color: #3CBC8D;
+
+        /* align: center; */
+        }
+
+        input[type=submit] {
+        width: 30%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 75%;
+        align: center;        
+        }
+
+        H1 {color: #EC7063; font-size: 55px}
+        H4,H3 {color: #EC7063; font-size: 20px}
+		H2 {color: black; font-size: 25px}
+
+        </style>
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+
+
+        <title>Boston House Price Prediction</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+
+    <body>
+
+        <h1 align="center">PREDICT - EXTRA MARITAL AFFAIR</h1>
+        <h3 align="center">MACHINE LEARNING - LOGISTIC REGRESSION MODEL</h3><br>
+
+        <style>
+            body{
+		<!--    background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg'); -->
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+                }
+        </style>
+
+<div align="center" style = "position:absolute; left:10%">
+  <form action="{{ url_for('predict')}}"  method="post">
+
+ 
+		<h2>	  {{ prediction_text }} </h2>
+
+  </form>  
+</div>
+
+
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
