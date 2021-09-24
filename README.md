@@ -1,6 +1,8 @@
 
 # EXTRA MARITAL AFFAIR PREDICTION
 
+**DEMO:  https://marital-affair-prediction04.herokuapp.com/**
+
 ## PROJECT DESCRIPTION
 The context of this project is to predict the Extra Marital Affairs of the Woman/Wife
 using Logistic Regression Machine Learning algorithm which played an important role in predicting 
@@ -136,7 +138,7 @@ To install the required packages and libraries, run this command in the project 
 
 - Implementation of Logistic Regression can be done in all the Supervised Learning Data.
 
-## Screenshots
+## SCREENSHOTS
 
 **DEMO:  https://marital-affair-prediction04.herokuapp.com/**
 
